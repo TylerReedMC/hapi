@@ -14,17 +14,19 @@ Note: we can say that Linux Mint and Arch Linux was used to run some tests, thou
 ## *Development Requirements*
 ### **Smart Module**
 1. Python influxdb:
-    ```pip install influxdb```
+...```pip install influxdb```
 2. Python schedule:
-    ```pip install schedule```
+...```pip install schedule```
 3. Python zeroconf:
-    ```pip install zeroconf```
+...```pip install zeroconf```
 4. Python psutil:
-    ```pip install psutil```
-5. Python SDL_DS3231:
-    ![SDL_DS3231 module](about:blank)
-6. Python RPi.GPIO:
-    ![RPi module](about:blank)
+...```pip install psutil```
+5. Python Paho-MQTT:
+...```pip install paho-mqtt```
+6. Python SDL_DS3231:
+...![SDL_DS3231 module](https://github.com/switchdoclabs/RTC_SDL_DS3231)
+7. Python RPi.GPIO:
+...![RPi module](about:blank)
 
 You might also considering using a Virtual Environment for testing.
 
@@ -34,12 +36,13 @@ If you are facing any troubles to get it running, drop us a message or open an i
 ### *System Configuration*
 Note: Soon we'll introduce configuration via regular file and/or database. For now all configuration are hardcoded.
 The system needs the following packages installed and properly configured:
-1. **Avahi** (daemon) configured to publish MQTT service:
-Here is an example. ![avahi-example](/readme/avahi-example)
-Note: it must be off by default (systemctl stop avahi-daemon.service or similar).
-2. **MQTT Mosquitto** with default configuration:
-Here is an example. ![mosquitto-example](/readme/mosquitto-example)
-3. **Influxdb** with default configuration:
+
+1. **Avahi** (daemon) configured to publish MQTT service;
+...Here is an example. ![avahi-example](/readme/avahi-example)
+...Note: it must be off by default (systemctl stop avahi-daemon.service or similar).
+2. **MQTT Mosquitto** with default configuration;
+...Here is an example. ![mosquitto-example](/readme/mosquitto-example)
+3. **Influxdb** with default configuration;
 4. **Grafana** [Optional] (highly recommended)
 
 ### *Usage:*
