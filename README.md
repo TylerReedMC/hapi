@@ -1,5 +1,7 @@
 ![HAPI Project](/readme/hapi.png?raw=true "HAPI Project")
 
+# Zero-footprint Autonomous Food Production
+
 # Under heavy development
 We're currently under heavy development.
 We would love to have you participate! Drop us a note and we'll add you into our product development Slack server so you can keep up with the latest.
@@ -7,11 +9,10 @@ We would love to have you participate! Drop us a note and we'll add you into our
 # Requirements
 The default developing platform is Raspbian, a GNU/Linux Distribution for Raspberry Pi.
 We can't provide any further information about other distributions, but we strongly believe it won't be a problem to run as long as you have all the requirements.
-
 Note: we can say that Linux Mint and Arch Linux was used to run some tests, though.
 
-## **Development Requirements**
-### *Smart Module*
+## *Development Requirements*
+### **Smart Module**
 1. Python influxdb:
     ```pip install influxdb```
 2. Python schedule:
@@ -32,17 +33,13 @@ If you are facing any troubles to get it running, drop us a message or open an i
 
 ### *System Configuration*
 Note: Soon we'll introduce configuration via regular file and/or database. For now all configuration are hardcoded.
-
 The system needs the following packages installed and properly configured:
-1. **Avahi** (daemon) configured to publish MQTT service;
-
+1. **Avahi** (daemon) configured to publish MQTT service:
 Here is an example. ![avahi-example](/readme/avahi-example)
-
 Note: it must be off by default (systemctl stop avahi-daemon.service or similar).
-2. **MQTT Mosquitto** with default configuration;
-
+2. **MQTT Mosquitto** with default configuration:
 Here is an example. ![mosquitto-example](/readme/mosquitto-example)
-3. **Influxdb** with default configuration;
+3. **Influxdb** with default configuration:
 4. **Grafana** [Optional] (highly recommended)
 
 ### *Usage:*
@@ -60,7 +57,6 @@ http://hapihq.com/
 ## Wiki Page
 Don't forget to check our Wiki Page.
 Note: we're currently redefining a few things. You might want to check it again later.
-
 ![HAPI Wiki Page](/../../wiki "Wiki Page")
 
 ## Our purpose
@@ -85,5 +81,4 @@ However if you have found any problem or just want to make a suggestion, please 
 
 ## System Overview
 ![System Overview of the HAPI Project](/readme/system-overview.png?raw=true "HAPI Project System Overview")
-
 Please note: we're currently working on the system design. Some changes on this image will probably be necessary in the near future.
